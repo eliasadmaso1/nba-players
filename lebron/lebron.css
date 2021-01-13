@@ -1,0 +1,108 @@
+#grid{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size:cover;
+
+    display: grid;
+    gap: 5px;
+
+    grid-template-columns:  20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+
+    
+    
+    grid-template-areas: 
+    "header header header header aside"
+    "section section section section aside"
+    "main main main main aside"
+    "main main main main aside"
+    "footer footer footer footer footer";
+    
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 15px;
+    
+    
+
+}
+
+
+section{
+    grid-area: section;
+
+}
+
+
+
+
+main{
+    grid-area: main;
+
+    
+
+}
+aside{
+    grid-area: aside;
+    border-radius: 15px;
+    border: solid 2px white;
+    background-color: black;
+    background-size: cover;
+
+    animation-name: aside;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes aside{
+    from{top: 0;}
+    to{ background-image: url("https://i.pinimg.com/originals/3c/c2/29/3cc229f906773a5e87224821601974ec.jpg");
+
+        }
+}
+
+footer{
+
+    grid-area:footer ;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 15px;
+}
+footer img{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+p{
+    color: white;
+    margin-left: 10px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+h1{
+    color: white;
+    margin-left: 10px;
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+    font-size: 70px;
+
+    animation-name: h1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes h1{
+    from{top: 0;}
+    to{color: black;}
+}
+
+video{
+    margin-left: 390px;
+    margin-top: -15px;}

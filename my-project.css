@@ -1,0 +1,120 @@
+#grid{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size:cover;
+
+    display: grid;
+    gap: 5px;
+
+    
+    grid-template-areas: 
+    "header header header header aside"
+    "section section section section aside"
+    "main main main main aside"
+    "main main main main aside"
+    "footer footer footer footer footer";
+    
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 15px;
+    
+    
+
+}
+
+
+section{
+    grid-area: section;
+
+}
+
+section img{
+    margin-left: 60px;
+    border: solid 2px white;
+    border-radius: 15px;
+    transition: 3s;
+
+}
+
+section img:hover{
+    transform: scale(0.5);
+}
+
+main{
+    grid-area: main;
+
+    
+
+}
+aside{
+    grid-area: aside;
+    border-radius: 15px;
+    border: solid 2px white;
+    background-color: black;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+footer{
+
+    grid-area:footer ;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 15px;
+    
+    
+
+}
+
+footer img{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+
+
+
+p{
+    color: white;
+    font-family: 'Yusei Magic', sans-serif;
+    margin-left: 15px;
+}
+
+h1{
+    color: white;
+    font-family: 'Yusei Magic', sans-serif;
+    margin-left: 10px;
+}
+
+h2{
+    color: white;
+    font-family: 'Yusei Magic', sans-serif;
+    margin-left: 10px;
+}
+
+
+
+h3{
+    color: white;
+    font-family: 'Yusei Magic', sans-serif;
+    margin-left: 10px;
+}
+    
+    
+
+
+
+li{
+    margin-left: -10px;
+    margin-top: 13px;
+    list-style: none;
+    
+    
+}
+
