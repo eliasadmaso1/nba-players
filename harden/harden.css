@@ -102,6 +102,62 @@ h1{
     to{color: black;}
 }
 
-video{
-    margin-left: 390px;
-    margin-top: -15px;}
+iframe{
+    margin-left: 790px;
+    margin-top: 45px;
+    border: solid 5px white;
+
+    animation-name: video;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes video{
+    from{top: 0;}
+    to{
+        border: solid 5px black;}
+}
+table{
+    border: solid 2px white;
+    border-radius: 5px;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    font-family: 'Yusei Magic', sans-serif;
+    margin-left: 15px;
+}
+ th{
+    border: solid 2px white;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+
+}
+ td{
+    border: solid 2px white;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+
+    animation-name: td;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* 
+@keyframes td{
+    from{top: 0;}
+    to{
+        background-color: white;
+        border: solid 3px black;
+        color: black;
+        transform: scale(1.2);}
+} */

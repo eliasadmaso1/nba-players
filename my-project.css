@@ -19,12 +19,14 @@
 
 header{
     grid-area: header;
-    background-color: black;
     border: solid 2px white;
-    border-radius: 15px;
-    
-    
+    /* background-color: black;
+    border: solid 2px white;
+    border-radius: 15px; */
+}
 
+header img{
+    text-align: right;
 }
 
 
@@ -54,25 +56,25 @@ main{
 aside{
     grid-area: aside;
     border-radius: 15px;
-    border: solid 2px white;
-    background-color: black;
+    border: solid 2px white; 
     display:flex;
     flex-wrap: wrap;
+    
     
 }
 
 footer{
 
     grid-area:footer ;
-    background-color: black;
+    /* background-color: black;
     border: solid 2px white;
-    border-radius: 15px;
+    border-radius: 15px; */
     
     
 
 }
 
-footer img{
+span{
     margin-top: 30px;
     margin-left: 50px;
 }
@@ -89,14 +91,38 @@ p{
 h1{
     color: white;
     font-family: 'Yusei Magic', sans-serif;
-    margin-left: 10px;
+    margin-left: 15px;
+    font-size: 45px;
+    border-radius: 15px;
+    background-color: black;
+    margin-right: 910px;
+    padding-left: 5px;
+    transition: 2s;
+    
 }
+h1:hover{
+    background-color: white;
+    color: black;
+}
+    
 
 h2{
     color: white;
     font-family: 'Yusei Magic', sans-serif;
-    margin-left: 10px;
+    margin-left: 15px;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: black;
+    margin-right: 1100px;
+    padding-left: 5px;
+    transition: 2s;
+  
 }
+h2:hover{
+    background-color: white;
+    color: black;
+}
+    
 
 
 
@@ -104,6 +130,17 @@ h3{
     color: white;
     font-family: 'Yusei Magic', sans-serif;
     margin-left: 10px;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 750px;
+    transition: 2s;
+}
+h3:hover{
+    background-color: white;
+    color: black;
 }
     
     
@@ -117,4 +154,59 @@ li{
     
     
 }
+
+@media (max-width:600px)
+{#grid{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size:cover;
+
+    display: grid;
+    gap: 5px;
+
+    
+    grid-template-areas: 
+    "header header header header aside"
+    "section section section section aside"
+    "main main main main aside"
+    "main main main main aside"
+    "footer footer footer footer footer";
+   
+    
+}
+
+
+
+}
+
+.header-social-icons{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-left: 225px;
+    }
+    
+    #icon{
+        
+        list-style: none;
+        padding: 5px;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    #mail{
+        margin-top: 24px;
+        margin-left: 5px;
+    }
+
+    #icon1{
+        margin-top: 16px;
+        margin-right: 4px;
+    }
+
+
 

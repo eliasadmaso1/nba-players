@@ -1,3 +1,4 @@
+/* grid css */
 #grid{
     width: 100vw;
     height: 100vh;
@@ -6,46 +7,31 @@
 
     display: grid;
     gap: 5px;
-
     grid-template-columns:  20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
-
-    
-    
     grid-template-areas: 
     "header header header header aside"
     "section section section section aside"
     "main main main main aside"
     "main main main main aside"
     "footer footer footer footer footer";
-    
 }
-
+/* header css */
 header{
     grid-area: header;
     background-color: black;
     border: solid 2px white;
     border-radius: 15px;
-    
-    
-
 }
-
-
+/* section css */
 section{
     grid-area: section;
-
 }
-
-
-
-
+/* main css */
 main{
     grid-area: main;
-
-    
-
 }
+/* aside css */
 aside{
     grid-area: aside;
     border-radius: 15px;
@@ -62,10 +48,9 @@ aside{
 @keyframes aside{
     from{top: 0;}
     to{ background-image: url("https://i.pinimg.com/originals/3c/c2/29/3cc229f906773a5e87224821601974ec.jpg");
-
-        }
+    }
 }
-
+/* footer css */
 footer{
 
     grid-area:footer ;
@@ -77,13 +62,13 @@ footer img{
     margin-top: 40px;
     margin-left: 50px;
 }
-
+/* p css */
 p{
     color: white;
     margin-left: 10px;
     font-family: 'Yusei Magic', sans-serif;
 }
-
+/* h1 css */
 h1{
     color: white;
     margin-left: 10px;
@@ -102,7 +87,68 @@ h1{
     from{top: 0;}
     to{color: black;}
 }
+/* iframe css */
+iframe{
+    margin-left: 790px;
+    margin-top: 45px;
+    border: solid 5px white;
 
-video{
-    margin-left: 390px;
-    margin-top: -15px;}
+    animation-name: video;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes video{
+    from{top: 0;}
+    to{
+        border: solid 5px black;}
+}
+
+table{
+    border: solid 2px white;
+    border-radius: 5px;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    font-family: 'Yusei Magic', sans-serif;
+    margin-left: 15px;
+}
+ th{
+    border: solid 2px white;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+
+}
+ td{
+    border: solid 2px white;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+
+    animation-name: td;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* @keyframes td{
+    from{top: 0;}
+    to{
+        background-color: white;
+        border: solid 3px black;
+        color: black;
+        transform: scale(1.2);}
+} */
+
+
+
+
