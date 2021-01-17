@@ -1,4 +1,4 @@
-/* grid css */
+/* -----grid css----- */
 #grid{
 
     background-image: url("https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -17,22 +17,22 @@
     "main main main main aside"
     "footer footer footer footer footer";
 }
-/* header css */
+/* ------header css----- */
 header{
     grid-area: header;
     background-color: black;
     border: solid 2px white;
     border-radius: 15px;
 }
-/* section css */
+/* -----section css----- */
 section{
     grid-area: section;
 }
-/* main css */
+/* -----main css---- */
 main{
     grid-area: main;
 }
-/* aside css */
+/* -----aside css---- */
 aside{
     grid-area: aside;
     border-radius: 15px;
@@ -51,7 +51,7 @@ aside{
     to{ background-image: url("https://i.pinimg.com/originals/3c/c2/29/3cc229f906773a5e87224821601974ec.jpg");
     }
 }
-/* footer css */
+/* -----footer css------ */
 footer{
 
     grid-area:footer ;
@@ -63,13 +63,13 @@ footer img{
     margin-top: 55px;
     margin-left: 50px;
 }
-/* p css */
+/* -----p css----- */
 p{
     color: white;
     margin-left: 10px;
     font-family: 'Yusei Magic', sans-serif;
 }
-/* h1 css */
+/* -----h1 css----- */
 h1{
     color: white;
     margin-left: 10px;
@@ -88,7 +88,7 @@ h1{
     from{top: 0;}
     to{color: black;}
 }
-/* iframe css */
+/* -----iframe css----- */
 iframe{
     margin-left: 57.5%;
     margin-top: 0%;
@@ -141,14 +141,6 @@ table{
     animation-direction: alternate;
 }
 
-/* @keyframes td{
-    from{top: 0;}
-    to{
-        background-color: white;
-        border: solid 3px black;
-        color: black;
-        transform: scale(1.2);}
-} */
 
 
 

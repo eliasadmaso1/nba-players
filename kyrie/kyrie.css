@@ -1,3 +1,4 @@
+/* ----- grid container ----- */
 #grid{
     
     
@@ -8,46 +9,35 @@
 
     display: grid;
     gap: 5px;
-
     grid-template-columns:  20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
 
-    
-    
     grid-template-areas: 
     "header header header header aside"
     "section section section section aside"
     "main main main main aside"
     "main main main main aside"
     "footer footer footer footer footer";
-    
 }
-
-header{
+/* ----- header ------ */
+header
+{
     grid-area: header;
     background-color: black;
     border: solid 2px white;
     border-radius: 15px;
-    
-    
-
 }
-
-
-section{
+/* ----- section ----- */
+section
+{
     grid-area: section;
-
 }
-
-
-
-
-main{
+/* ----- main ----- */
+main
+{
     grid-area: main;
-
-    
-
 }
+/* ----- aside ----- */
 aside{
     grid-area: aside;
     border-radius: 15px;
@@ -60,30 +50,30 @@ aside{
     animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
+
 @keyframes aside{
     from{top: 0;}
     to{ background-image: url("https://i.pinimg.com/564x/5f/de/6d/5fde6d0272d79909b66d5cfec0d85b5b.jpg");
-
-        }
-}
-
-footer{
-
+}}
+/* ---- footer ---- */
+footer
+{
     grid-area:footer ;
     background-color: black;
     border: solid 2px white;
     border-radius: 15px;
 }
-
 footer img{
     margin-top: 70px;
     margin-left: 50px;}
+/* ---- p ----- */
 
 p{
     color: white;
     margin-left: 10px;
     font-family: 'Yusei Magic', sans-serif;
 }
+/* ---- h1 ---- */
 
 h1{
     color: white;
@@ -103,6 +93,7 @@ h1{
     from{top: 0;}
     to{color: black;}
 }
+/* ---- iframe ---- */
 
 iframe{
     margin-left: 57.5%;
@@ -121,6 +112,7 @@ iframe{
     to{
         border: solid 5px black;}
 }
+/* ---- table ---- */
 table{
     border: solid 2px white;
     border-radius: 5px;
@@ -157,11 +149,6 @@ table{
     animation-direction: alternate;
 }
 
-/* @keyframes td{
-    from{top: 0;}
-    to{
-        background-color: white;
-        border: solid 3px black;
-        color: black;
-        transform: scale(1.2);}
-} */
+
+   
+

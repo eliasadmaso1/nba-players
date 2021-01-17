@@ -154,12 +154,6 @@ table{
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-/* 
-@keyframes td{
-    from{top: 0;}
-    to{
-        background-color: white;
-        border: solid 3px black;
-        color: black;
-        transform: scale(1.2);}
-} */
+
+
+   
