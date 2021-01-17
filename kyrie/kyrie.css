@@ -1,8 +1,10 @@
 #grid{
-    width: 100vw;
-    height: 100vh;
+    
+    
     background-image: url("https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-size:cover;
+    border: solid 5px white;
+    border-radius: 20px;
 
     display: grid;
     gap: 5px;
@@ -74,7 +76,7 @@ footer{
 }
 
 footer img{
-    margin-top: 40px;
+    margin-top: 70px;
     margin-left: 50px;}
 
 p{
@@ -103,8 +105,8 @@ h1{
 }
 
 iframe{
-    margin-left: 790px;
-    margin-top: 45px;
+    margin-left: 57.5%;
+    margin-top: 0%;
     border: solid 5px white;
 
     animation-name: video;
@@ -127,6 +129,8 @@ table{
     height: 10px;
     font-family: 'Yusei Magic', sans-serif;
     margin-left: 15px;
+    box-shadow: 4px 4px 4px;
+    margin-top: 20px;
 }
  th{
     border: solid 2px white;
